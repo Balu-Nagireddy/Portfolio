@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Brahmareddy Nagireddy | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1>Hi, I'm <span>Bala Brahmareddy Nagireddy</span></h1>
+            <p>A passionate <span>Web Developer</span> and <span>Data Science Enthusiast</span> focused on building impactful digital solutions.</p>
+            <a href="#contact" class="btn-primary">Let’s Connect</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bala-brahmareddy-nagireddy-083b1924b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Balu-Nagireddy" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:balabrahmareddynagireddy@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm a final-year student in Artificial Intelligence at Prakasam Engineering College, Kandukur. With a strong foundation in web development and data science, I specialize in creating efficient and visually appealing digital solutions.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Programming Languages</h3>
+                    <p>Python, Java, C</p>
+                </div>
+                <div>
+                    <h3>Frontend Technologies</h3>
+                    <p>HTML, CSS, JavaScript, Angular</p>
+                </div>
+                <div>
+                    <h3>Backend Technologies</h3>
+                    <p>Node.js, PHP, Django, Spring Boot</p>
+                </div>
+                <div>
+                    <h3>Frameworks & Libraries</h3>
+                    <p>SciPy, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn</p>
+                </div>
+                <div>
+                    <h3>Tools</h3>
+                    <p>VS Code, Jupyter Notebook, Eclipse</p>
+                </div>
+                <div>
+                    <h3>Databases</h3>
+                    <p>SQL, MySQL, MongoDB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>To-Do List Application</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <p>A task management tool with features like adding, editing, and marking tasks as completed.</p>
+                    <a href="https://github.com/Balu-Nagireddy/To-Do-List" class="btn-secondary" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Community Service Project</h3>
+                    <p>Led agricultural improvement initiatives including drip irrigation and sustainable farming techniques.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Flip Coin Game</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <p>A fun coin flip simulator with animations and real-time results.</p>
+                    <a href="https://github.com/Balu-Nagireddy/Flip-Coin" class="btn-secondary" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Blood Donor Platform</h3>
+                    <p>HTML, CSS, JavaScript, PHP</p>
+                    <p>A platform to connect blood donors and recipients with advanced search features.</p>
+                    <a href="https://github.com/Balu-Nagireddy/Blood_Donar_Project" class="btn-secondary" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Ready to create something amazing together? Reach out to me below!</p>
+            <a href="mailto:balabrahmareddynagireddy@gmail.com" class="btn-primary">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Bala Brahmareddy Nagireddy | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.btn-primary').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
