@@ -5,117 +5,720 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bala Brahmareddy Nagireddy | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero-section">
-        <div class="profile-image">
-            <img src="Profile1.png" alt="Bala Brahmareddy Nagireddy">
-        </div>
-        <div class="container">
-            <h1>Hi, I'm <span>Bala Brahmareddy Nagireddy</span></h1>
-            <p>A passionate <span>Web Developer</span> and <span>Data Science Enthusiast</span> focused on building impactful digital solutions.</p>
-            <a href="#contact" class="btn-primary">Let’s Connect</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/bala-brahmareddy-nagireddy-083b1924b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Balu-Nagireddy" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:balabrahmareddynagireddy@gmail.com"><i class="fas fa-envelope"></i></a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">BN<span class="accent-dot">.</span></a>
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I'm a final-year student in Artificial Intelligence at Prakasam Engineering College, Kandukur. With a strong foundation in web development and data science, I specialize in creating efficient and visually appealing digital solutions.
-            </p>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
         </div>
-    </section>
-
-    <section class="skills-section">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div>
-                    <h3>Programming Languages</h3>
-                    <p>Python, Java, C</p>
-                </div>
-                <div>
-                    <h3>Frontend Technologies</h3>
-                    <p>HTML, CSS, JavaScript, Angular</p>
-                </div>
-                <div>
-                    <h3>Backend Technologies</h3>
-                    <p>Node.js, PHP, Django, Spring Boot</p>
-                </div>
-                <div>
-                    <h3>Frameworks & Libraries</h3>
-                    <p>SciPy, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn</p>
-                </div>
-                <div>
-                    <h3>Tools</h3>
-                    <p>VS Code, Jupyter Notebook, Eclipse</p>
-                </div>
-                <div>
-                    <h3>Databases</h3>
-                    <p>SQL, MySQL, MongoDB</p>
-                </div>
+        <div class="container hero-content">
+            <div class="hero-image-wrapper fade-in">
+                <div class="hero-image-glow"></div>
+                <img src="Profile1.png" alt="Bala Brahmareddy Nagireddy" class="hero-image">
             </div>
-        </div>
-    </section>
-
-    <section class="projects-section">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>To-Do List Application</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                    <p>A task management tool with features like adding, editing, and marking tasks as completed.</p>
-                    <a href="https://github.com/Balu-Nagireddy/To-Do-List" class="btn-secondary" target="_blank">View on GitHub</a>
+            <div class="hero-text fade-in">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Bala Brahmareddy <span class="text-gradient">Nagireddy</span></h1>
+                <div class="hero-typing">
+                    <span class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
                 </div>
-                <div class="project-card">
-                    <h3>Community Service Project</h3>
-                    <p>Led agricultural improvement initiatives including drip irrigation and sustainable farming techniques.</p>
+                <p class="hero-description">A passionate <strong>DevOps Engineer</strong> & <strong>Full Stack Developer</strong> focused on building scalable, impactful digital solutions with modern technologies.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Let's Connect
+                    </a>
+                    <a href="https://github.com/Balu-Nagireddy" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-github"></i> View Projects
+                    </a>
                 </div>
-                <div class="project-card">
-                    <h3>Flip Coin Game</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                    <p>A fun coin flip simulator with animations and real-time results.</p>
-                    <a href="https://github.com/Balu-Nagireddy/Flip-Coin" class="btn-secondary" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Blood Donor Platform</h3>
-                    <p>HTML, CSS, JavaScript, PHP</p>
-                    <p>A platform to connect blood donors and recipients with advanced search features.</p>
-                    <a href="https://github.com/Balu-Nagireddy/Blood_Donar_Project" class="btn-secondary" target="_blank">View on GitHub</a>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/bala-brahmareddy-nagireddy-083b1924b/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Balu-Nagireddy" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:balabrahmareddynagireddy@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918978238089" class="social-link" aria-label="Phone">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Ready to create something amazing together? Reach out to me below!</p>
-            <a href="mailto:balabrahmareddynagireddy@gmail.com" class="btn-primary">Email Me</a>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p>I'm a final-year <strong>Artificial Intelligence</strong> student at <strong>Prakasam Engineering College</strong>, Kandukur, with a strong foundation in <strong>DevOps engineering</strong>, <strong>full stack development</strong>, and <strong>data science</strong>. I specialize in building efficient, scalable digital solutions — from microservices architectures to cloud-native deployments.</p>
+                    <p>Currently working as a <strong>DevOps Engineer & Full Stack Developer</strong> at <strong>IMPAR Fintech</strong>, I architect and maintain payment services using <strong>Golang</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, and cloud infrastructure on <strong>AWS</strong> and <strong>Azure</strong>.</p>
+                    <p>I'm deeply passionate about leveraging technology to solve real-world problems — whether it's building secure cloud storage systems, forecasting sales with machine learning, or optimizing CI/CD pipelines for production deployments.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Tech Skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-content fade-in">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">GoLang</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">scikit-Learn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Helm</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Eclipse</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Microsoft Azure</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Loki</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-tag current">Current</div>
+                        <h3>DevOps Engineer | Full Stack Developer</h3>
+                        <h4><i class="fas fa-building"></i> IMPAR Fintech Software Solutions India Private Limited</h4>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> April 2025 - Present</p>
+                        <ul class="timeline-desc">
+                            <li>Developed and enhanced <strong>SEPA Instant</strong> and <strong>SIC Instant</strong> payment services using <strong>Golang</strong> and <strong>Microservices Architecture</strong>.</li>
+                            <li>Designed, developed, and maintained <strong>RESTful APIs</strong> for payment orchestration, transaction processing, and banking integrations.</li>
+                            <li>Built scalable backend services following <strong>Clean Architecture</strong> and enterprise software development best practices.</li>
+                            <li>Containerized applications using <strong>Docker</strong> and orchestrated deployments with <strong>Kubernetes</strong>.</li>
+                            <li>Designed and maintained <strong>Jenkins CI/CD</strong> pipelines for automated build, testing, deployment, and release processes.</li>
+                            <li>Managed cloud infrastructure on <strong>AWS</strong> and <strong>Microsoft Azure</strong> with <strong>Helm</strong> deployment workflows.</li>
+                            <li>Built monitoring dashboards using <strong>Grafana</strong> with <strong>Prometheus</strong> and centralized logging using <strong>Loki</strong>.</li>
+                            <li>Configured and managed deployments across <strong>Development</strong>, <strong>SIT</strong>, <strong>UAT</strong>, and <strong>Production</strong> environments.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>DevOps Engineer Intern | Full Stack Developer Intern</h3>
+                        <h4><i class="fas fa-building"></i> IMPAR Fintech Software Solutions India Private Limited</h4>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> October 2024 - March 2025</p>
+                        <ul class="timeline-desc">
+                            <li>Contributed to the development of the <strong>Self Service Portal (SSP)</strong> in an <strong>Agile Scrum</strong> environment.</li>
+                            <li>Developed backend services and <strong>REST APIs</strong> using <strong>Golang</strong>.</li>
+                            <li>Worked on <strong>Employee Management</strong>, <strong>Leave Management</strong>, <strong>Teams</strong>, <strong>Projects</strong>, <strong>Notifications</strong>, and <strong>RBAC</strong> modules.</li>
+                            <li>Worked with <strong>PostgreSQL</strong> for database development and query optimization.</li>
+                            <li>Containerized applications using <strong>Docker</strong> and deployed services on <strong>Kubernetes</strong>.</li>
+                            <li>Acted as <strong>Deputy Technical Lead</strong> — coordinated Daily Scrum meetings and sprint discussions.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Web Developer</h3>
+                        <h4><i class="fas fa-building"></i> BrainOvision Solutions Pvt. Ltd.</h4>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kandukur</p>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> May 2023 - July 2023</p>
+                        <ul class="timeline-desc">
+                            <li>Created a <strong>To-Do List Application</strong> using HTML, CSS, and JavaScript with add, edit, delete, and mark-as-completed features.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <h4><i class="fas fa-building"></i> BrainOvision Solutions Pvt. Ltd.</h4>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kandukur</p>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> July 2023 - October 2023</p>
+                        <ul class="timeline-desc">
+                            <li>Created web pages using HTML and CSS as part of frontend development tasks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-dark" id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid fade-in">
+                <div class="project-card" onclick="window.open('https://github.com/Balu-Nagireddy/VeriDedup','_blank')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')event.preventDefault(),window.open('https://github.com/Balu-Nagireddy/VeriDedup','_blank')"
+                    <div class="project-card-bg"></div>
+                    <div class="project-card-content">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>VeriDedup: Secure Cloud Data Deduplication</h3>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>JSP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <p>Secure cloud-based data deduplication system eliminating duplicate files while ensuring data security, integrity, and efficient cloud storage using AES encryption and role-based access control.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check-circle"></i> AES Encryption</span>
+                            <span><i class="fas fa-check-circle"></i> Integrity Verification</span>
+                            <span><i class="fas fa-check-circle"></i> Role-Based Access</span>
+                            <span><i class="fas fa-check-circle"></i> Secure File Management</span>
+                        </div>
+                        <div class="project-link">
+                            <span><i class="fab fa-github"></i> View on GitHub</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" onclick="window.open('https://github.com/Balu-Nagireddy/Sales-Forecasting-ML','_blank')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')event.preventDefault(),window.open('https://github.com/Balu-Nagireddy/Sales-Forecasting-ML','_blank')"
+                    <div class="project-card-bg"></div>
+                    <div class="project-card-content">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Sales Forecasting ML</h3>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                        </div>
+                        <p>Machine learning project that predicts future sales trends for businesses through data preprocessing, model training, evaluation, and visualization of actual vs. predicted sales.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check-circle"></i> Data Preprocessing</span>
+                            <span><i class="fas fa-check-circle"></i> Sales Prediction</span>
+                            <span><i class="fas fa-check-circle"></i> Model Evaluation</span>
+                            <span><i class="fas fa-check-circle"></i> Data Visualization</span>
+                        </div>
+                        <div class="project-link">
+                            <span><i class="fab fa-github"></i> View on GitHub</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Learning</span>
+                <h2 class="section-title">Education <span class="text-gradient">Journey</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="education-grid fade-in">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-content">
+                        <h3>Bachelor of Technology</h3>
+                        <p class="edu-field">Artificial Intelligence</p>
+                        <p class="edu-school"><i class="fas fa-university"></i> Prakasam Engineering College, Kandukur</p>
+                        <p class="edu-date"><i class="fas fa-calendar-alt"></i> Dec 2021 - April 2025</p>
+                        <div class="edu-score">
+                            <span class="score-value">70.5%</span>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 70.5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-content">
+                        <h3>Intermediate</h3>
+                        <p class="edu-field">Science (MPC)</p>
+                        <p class="edu-school"><i class="fas fa-university"></i> MSR Junior College, Chimakurthy</p>
+                        <p class="edu-date"><i class="fas fa-calendar-alt"></i> July 2019 - March 2021</p>
+                        <div class="edu-score">
+                            <span class="score-value">96%</span>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 96%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+                    <div class="edu-content">
+                        <h3>Secondary Education</h3>
+                        <p class="edu-field">Science</p>
+                        <p class="edu-school"><i class="fas fa-university"></i> ZP High School, Kotha Yeruvaripalli</p>
+                        <p class="edu-date"><i class="fas fa-calendar-alt"></i> July 2016 - May 2017</p>
+                        <div class="edu-score">
+                            <span class="score-value">9.7 CGPA</span>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section (Certifications + Awards) -->
+    <section class="section section-dark" id="achievements">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Honors</span>
+                <h2 class="section-title">Certifications & <span class="text-gradient">Awards</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="achievements-grid fade-in">
+                <!-- Certifications -->
+                <div class="achievement-group">
+                    <h3 class="group-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="cert-content">
+                            <h4>Data Science Using Python</h4>
+                            <p class="cert-issuer">APSSDC Indo-Euro Synchronization (IES) Pvt Ltd</p>
+                            <a href="https://drive.google.com/file/d/1QqhY5lcecCXcVrNTWhX7gafnfciV1qU4/view?usp=drive_link" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div class="cert-content">
+                            <h4>Data Science Using Python</h4>
+                            <p class="cert-issuer">ExcelR</p>
+                            <a href="https://drive.google.com/file/d/13kpXBGjtWzUmaoB_7RdAPPXflBwohkbq/view?usp=drive_link" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="cert-content">
+                            <h4>Data Science Using Python</h4>
+                            <p class="cert-issuer">Udemy</p>
+                            <a href="https://drive.google.com/file/d/13nmv29LtNhvn17LKz5TBJNobBc-TH8c1/view?usp=drive_link" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Awards -->
+                <div class="achievement-group">
+                    <h3 class="group-title"><i class="fas fa-trophy"></i> Awards</h3>
+                    <div class="award-card">
+                        <div class="award-medal"><i class="fas fa-medal"></i></div>
+                        <div class="award-content">
+                            <p>2024: Earned <strong>A+ Grade</strong> in <strong>National Competence & Employability Test (NCET)</strong> Examination</p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-medal"><i class="fas fa-shield-alt"></i></div>
+                        <div class="award-content">
+                            <p>2024: Completed <strong>NCC B Certificate</strong> with <strong>A grade</strong></p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-medal"><i class="fas fa-star"></i></div>
+                        <div class="award-content">
+                            <p>2016: <strong>2nd prize</strong> winner at constitutional level <strong>Talent Test</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content fade-in">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:balabrahmareddynagireddy@gmail.com">balabrahmareddynagireddy@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+918978238089">+91 8978238089</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>2-22, Chowta Gogulapalli, PC Palli, Prakasam, AP - 523111</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/bala-brahmareddy-nagireddy-083b1924b/" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <p>Ready to build something amazing together? Let's collaborate and create impactful digital solutions!</p>
+                    <div class="contact-actions">
+                        <a href="mailto:balabrahmareddynagireddy@gmail.com" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Email
+                        </a>
+                        <a href="tel:+918978238089" class="btn btn-outline btn-large">
+                            <i class="fas fa-phone-alt"></i> Call Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2024 Bala Brahmareddy Nagireddy | All Rights Reserved</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>BN<span class="accent-dot">.</span></h3>
+                    <p>DevOps Engineer | Full Stack Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/bala-brahmareddy-nagireddy-083b1924b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Balu-Nagireddy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:balabrahmareddynagireddy@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bala Brahmareddy Nagireddy. All rights reserved. | Built with <i class="fas fa-heart" style="color: #ff4d6d;"></i></p>
+            </div>
         </div>
     </footer>
 
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
-        document.querySelector('.btn-primary').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector('#contact').scrollIntoView({
-                behavior: 'smooth'
+        // === Mobile Nav Toggle ===
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        const navbar = document.getElementById('navbar');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
             });
         });
+
+        // === Navbar Scroll Effect ===
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // === Smooth Scroll for Nav Links ===
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // === Back to Top Button ===
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // === Typewriter Effect ===
+        const roles = ['DevOps Engineer', 'Full Stack Developer', 'Data Science Enthusiast', 'Cloud Engineer'];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typewriterEl = document.querySelector('.typing-text');
+
+        function typeWriter() {
+            const currentRole = roles[roleIndex];
+            
+            if (isDeleting) {
+                typewriterEl.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterEl.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                isDeleting = true;
+                setTimeout(typeWriter, 2000);
+                return;
+            }
+
+            if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(typeWriter, 500);
+                return;
+            }
+
+            setTimeout(typeWriter, isDeleting ? 50 : 80);
+        }
+
+        typeWriter();
+
+        // === Scroll Reveal Animations ===
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        fadeElements.forEach(el => revealObserver.observe(el));
+
+        // === Counter Animation ===
+        const statNumbers = document.querySelectorAll('.stat-number');
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    animateCounter(entry.target, target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNumbers.forEach(el => counterObserver.observe(el));
+
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = Math.ceil(target / 60);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = current;
+                }
+            }, 30);
+        }
+
+        // === Timeline Animation ===
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 150);
+                    timelineObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        timelineItems.forEach(item => timelineObserver.observe(item));
+
+        // === Project Card Tilt Effect ===
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 15;
+                const rotateY = (centerX - x) / 15;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+            });
+        });
+
+        // === Parallax on Hero Gradient Orbs ===
+        document.addEventListener('mousemove', (e) => {
+            const orbs = document.querySelectorAll('.gradient-orb');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            orbs.forEach((orb, i) => {
+                const speed = (i + 1) * 20;
+                const moveX = (x - 0.5) * speed;
+                const moveY = (y - 0.5) * speed;
+                orb.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        });
+
+        console.log('%c Bala Brahmareddy Nagireddy ', 'background: linear-gradient(135deg, #6c63ff, #f72585); color: white; font-size: 18px; font-weight: bold; padding: 10px 20px; border-radius: 5px;');
+        console.log('%c DevOps Engineer | Full Stack Developer ', 'font-size: 14px; padding: 5px 10px;');
     </script>
 </body>
 </html>
