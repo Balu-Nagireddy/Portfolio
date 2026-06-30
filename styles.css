@@ -412,6 +412,7 @@ a {
 .hero-image-wrapper {
     position: relative;
     flex-shrink: 0;
+    margin-top: 20px;
 }
 
 .hero-image-glow {
