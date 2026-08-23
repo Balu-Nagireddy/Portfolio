@@ -38,9 +38,11 @@ The portfolio presents professional experience and public GitHub work, including
 
 ## Deployment
 
-The app is configured with Vite `base: '/Portfolio/'` so assets resolve correctly on GitHub Pages for this repository.
+The app uses Vite `base: './'` (relative), so the same build works on GitHub Pages (served under `/Portfolio/`) **and** on Vercel (served from root) without changes.
 
-Deployment is handled by GitHub Actions. After pushing to `main`, configure GitHub Pages to deploy from Actions if it is not already enabled.
+**GitHub Pages** — handled by GitHub Actions (`.github/workflows/deploy.yml`). In the repo's Settings → Pages, set "Source" to **Deploy from a GitHub Action**. After that, every push to `main` rebuilds and republishes the site to `https://balu-nagireddy.github.io/Portfolio/`.
+
+**Vercel** — `vercel.json` is configured (`framework: vite`, `outputDirectory: dist`, SPA rewrite). Import the repo at vercel.com and it deploys automatically, or run `npx vercel`.
 
 ## Local setup
 

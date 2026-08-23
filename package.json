@@ -3,11 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://balu-nagireddy.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "node -e \"const fs=require('fs'); fs.copyFileSync('dist/index.html', 'dist/Portfolio.html'); fs.copyFileSync('dist/index.html', 'dist/404.html'); fs.writeFileSync('dist/.nojekyll', '');\"",
+    "postbuild": "node -e \"const fs=require('fs'); fs.copyFileSync('dist/index.html', 'dist/404.html'); fs.writeFileSync('dist/.nojekyll', '');\"",
     "preview": "vite preview"
   },
   "dependencies": {
