@@ -91,7 +91,7 @@ export const portfolio = {
     {
       title: 'Backend Developer & DevOps Intern',
       company: 'IMPAR Fintech Software Solutions India Pvt. Ltd.',
-      meta: 'Hyderabad, India | October 2024 to March 2025',
+      meta: 'Hyderabad, India | July 2024 to March 2025',
       points: [
         'Contributed end-to-end to the Self Service Portal, architecting Go REST APIs for employee, leave, team, project, notification, and RBAC modules.',
         'Developed dynamic frontend components and connected them to Go services for responsive enterprise workflows.',
@@ -116,6 +116,39 @@ export const portfolio = {
     },
   ],
   projects: [
+    {
+      type: 'Personal Project',
+      category: 'Professional projects',
+      title: 'PayPilot - Intelligent Payment Reliability Platform',
+      badge: 'Featured Project',
+      description:
+        'Production-inspired payment orchestration platform that classifies declines, applies controlled retry decisions, prevents duplicate charges through idempotency, and provides merchant-facing AI insights.',
+      tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'React', 'Docker Compose', 'Prometheus', 'Ollama'],
+      metrics: ['Idempotent transaction state machine', 'Circuit breaker, retry queue, and DLQ replay', 'Approximately 70 tests with initial coverage around 65%'],
+      surface: 'ai',
+    },
+    {
+      type: 'Personal Project',
+      category: 'Professional projects',
+      title: 'AI-Powered Job Application Automation Platform',
+      badge: 'Featured Project',
+      description:
+        'Full-stack job application platform combining Go Fiber services and a Python AI service to support ATS scoring, resume-to-job matching, resume optimization, cover letters, interview preparation, and application tracking.',
+      tech: ['React', 'TypeScript', 'Go Fiber', 'Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'GitHub Actions', 'Supabase', 'Render', 'Vercel'],
+      metrics: ['Six Go business services with an API gateway', 'AI-assisted resume and job-description analysis', 'JWT authentication, health checks, metrics, and structured logging'],
+      surface: 'fullstack',
+    },
+    {
+      type: 'Personal Project',
+      category: 'Professional projects',
+      title: 'Modular Resume Platform',
+      badge: 'Featured Project',
+      description:
+        'Modular resume management platform built as a Go Fiber service, organizing six functional modules behind a unified backend and a dashboard-oriented frontend.',
+      tech: ['Go', 'Fiber', 'REST APIs', 'JWT', 'Docker', 'NGINX', 'PostgreSQL', 'Metrics', 'Structured Logging'],
+      metrics: ['Six modules delivered in one modular service', '18 backend endpoints', 'Containerized runtime with authentication and observability'],
+      surface: 'data',
+    },
     {
       type: 'Professional Project',
       category: 'Professional projects',
